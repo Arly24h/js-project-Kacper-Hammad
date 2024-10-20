@@ -244,6 +244,16 @@ a {
 .c-h1-about {
   font-size: 2rem;
 }
+@media (width <= 600px) {
+  .c-about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .c-h1-about {
+      font-size: 1rem;
+    }
+  }
+}
 /* Footer Section */
 
 .c-footer {
