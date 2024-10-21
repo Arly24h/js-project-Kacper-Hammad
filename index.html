@@ -32,13 +32,22 @@
             class="logo-image"
           />
         </div>
+
+        <!-- Hamburger manu -->
+        <input type="checkbox" id="manu-checkbox" class="manu-checkbox" />
+        <label for="manu-checkbox" class="hamburger-icon"
+          ><span class="fas fa-bars hamburger"></span>
+          <span class="fa-solid fa-xmark close"></span
+        ></label>
+
         <nav class="c-nav-bar-list">
           <a href="/">Home</a>
           <a href="/">Men</a>
           <a href="/">Women</a>
           <a href="/about.html">About</a>
-          <a href="/">Contact Us</a>
+          <a href="/contact.html">Contact Us</a>
         </nav>
+
         <div class="c-nav-icons">
           <i class="fa-solid fa-magnifying-glass"></i>
           <i class="fa-solid fa-user"></i>
@@ -307,16 +316,18 @@
               do it!
             </p>
           </div>
-          <form>
-            <label for="email"></label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your email"
-            />
-            <input type="submit" value="Subcribe" />
-          </form>
+          <div>
+            <form>
+              <label for="email"></label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+              />
+              <input type="submit" value="Subcribe" />
+            </form>
+          </div>
           <div class="c-dacuments-footer">
             <a href="/">Privacy Policy</a>
             <a href="/">Terms of Use</a>
