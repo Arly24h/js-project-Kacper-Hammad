@@ -139,7 +139,7 @@ a:hover {
   color: white;
   background-color: #000000;
   text-decoration: underline;
-  scale: 1.1;
+  /* scale: 1.1; */
 }
 
 /* Hero section */
