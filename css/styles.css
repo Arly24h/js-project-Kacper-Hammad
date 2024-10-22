@@ -137,7 +137,7 @@ nav a {
 }
 a:hover {
   color: white;
-  background-color: #000000;
+  background-color: blue;
   text-decoration: underline;
   scale: 1.1;
 }
