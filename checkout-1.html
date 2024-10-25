@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="discription"
-      content="selected a jacket from our Rainy-Day products"
-    />
+    <meta name="discription" content="checkout from Rainy-Day" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,11 +17,177 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Rainy-Day | jacket-select</title>
+    <title>Rainy-Day | checkout-1</title>
   </head>
   <body>
-    <main>
-      <!-- <header class="l-header"> -->
+    <header class="l-header">
+      <section class="c-nav-bar">
+        <div>
+          <img
+            src="/media/images/RainyDays_Logo.png"
+            alt="logo-rainyday"
+            class="logo-image"
+          />
+        </div>
+        <!-- Hamburger manu -->
+        <input type="checkbox" id="manu-checkbox" class="manu-checkbox" />
+        <label for="manu-checkbox" class="hamburger-icon"
+          ><span class="fas fa-bars hamburger"></span>
+          <span class="fa-solid fa-xmark close"></span
+        ></label>
+        <nav class="c-nav-bar-list">
+          <a href="/">Home</a>
+          <a href="/">Men</a>
+          <a href="/">Women</a>
+          <a href="/">About</a>
+          <a href="/">Contact Us</a>
+        </nav>
+        <div class="c-nav-icons">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-user"></i>
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </section>
+    </header>
+
+    <main class="l-main">
+      <section class="c-container-checkout">
+        <section class="c-container-membership-card">
+          <div class="c-free-shipping">
+            <p>Free shipping for members.</p>
+            <p class="c-text-color">Get a membership card</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </section>
+        <section class="c-cart-summary">
+          <article class="col-left-section">
+            <div>
+              <h2>Cart</h2>
+              <p>Check your cart items before proceeding to the payment</p>
+            </div>
+
+            <section class="c-items-details">
+              <div>
+                <img
+                  src="/media/images/image for check-out.png"
+                  width="240px"
+                  height="240px"
+                  alt="item for check-out"
+                />
+              </div>
+
+              <div class="item-detail">
+                <p>Women's Verglas Infinity Shell Jacket 2.0</p>
+                <div class="c-shoose-size">
+                  <p>Size</p>
+                  <p>M</p>
+                  <p><i class="fa-solid fa-angle-down"></i></p>
+                </div>
+                <div class="c-no-of-items">
+                  <p><i class="fa-solid fa-minus"></i></p>
+                  <p>Amount 1</p>
+                  <p><i class="fa-solid fa-plus"></i></p>
+                </div>
+                <div class="c-delete-item">
+                  <p><i class="fa-solid fa-trash"></i></p>
+                  <p>Edit Order</p>
+                </div>
+              </div>
+            </section>
+          </article>
+          <article class="col-right-section">
+            <section class="c-summary-promo">
+              <div>
+                <h2>Summary</h2>
+                <p>Promocode</p>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  id="promocode"
+                  class="input-promocode"
+                  placeholder="Enter Promocode"
+                />
+                <a href="/" class="apply-btn">Apply +</a>
+              </div>
+            </section>
+            <section class="c-price-section">
+              <div class="c-price">
+                <p>Total</p>
+                <p>500 kr</p>
+              </div>
+              <div class="c-price">
+                <p>Shipping Cost</p>
+                <p>75 kr</p>
+              </div>
+              <div>
+                <hr />
+              </div>
+              <div class="c-price">
+                <p>Total cost</p>
+                <p>575 kr</p>
+              </div>
+            </section>
+            <input type="button" value="Pay" class="btn-pay" />
+          </article>
+        </section>
+      </section>
+      <section class="card">
+        <div class="c-add-payment-card">
+          <div>
+            <p>Payment</p>
+          </div>
+          <div class="add-card">
+            <div><i class="fa-solid fa-plus"></i></div>
+            <p>Add Payment Card</p>
+          </div>
+        </div>
+        <section class="c-container-debit-card">
+          <div class="visa-debit-card">
+            <i class="fa-brands fa-cc-visa"></i>
+            <p>Visa Debit Card</p>
+          </div>
+          <div class="container-stars">
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-7 star"></i>
+            <i class="fa-solid fa-8 star"></i>
+            <i class="fa-solid fa-6 star"></i>
+          </div>
+          <div><i class="fa-solid fa-circle star"></i></div>
+        </section>
+        <section class="c-container-debit-card">
+          <div class="visa-debit-card">
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <p>Master Debit Card</p>
+          </div>
+          <div class="container-stars">
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-8 star"></i>
+            <i class="fa-solid fa-9 star"></i>
+            <i class="fa-solid fa-0 star"></i>
+          </div>
+          <div><i class="fa-regular fa-circle star"></i></div>
+        </section>
+      </section>
     </main>
 
     <!-- footer-section -->
