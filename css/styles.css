@@ -97,7 +97,7 @@ body {
   flex-wrap: wrap;
   gap: 1rem;
 }
-a {
+nav a {
   color: #000000;
   text-decoration: none;
 }
@@ -154,7 +154,7 @@ nav a {
     padding: 10px;
   }
 }
-a:hover {
+nav a:hover {
   color: white;
   background-color: black;
   text-decoration: underline;
@@ -574,7 +574,7 @@ p {
 .c-container-membership-card {
   display: grid;
   grid-template-columns: 1fr auto;
-  /* justify-content: space-between; */
+
   align-items: center;
   gap: var(--gap-md);
   padding: 10px;
@@ -720,8 +720,21 @@ h2 {
   border: 1px solid gray;
   max-width: 500px;
   padding: 5px;
-  /* background-color: gray; */
 }
+.membership-card-cross {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.membership-card-cross:hover {
+  background-color: #6ab3dc;
+  scale: 1.2;
+}
+/* checkout-2 */
+.c-container-checkout-2 {
+  display: flex;
+  padding-top: 40px;
+}
+
 /* Footer Section */
 
 .c-footer {
