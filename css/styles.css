@@ -508,16 +508,19 @@ p {
 }
 .add-to-cart {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .btn-addtocart {
+  display: flex;
+  justify-content: center;
   width: 142px;
   padding: 10px;
   background-color: #5642da;
   color: white;
   border-radius: 0.3rem;
   border: 1px solid gray;
+  text-decoration: none;
 }
 .btn-addtocart:hover {
   background-color: #6ab3dc;
@@ -684,6 +687,10 @@ h2 {
 .btn-pay {
   color: white;
   padding: 5px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-decoration: none;
 }
 .apply-btn {
   align-items: center;
