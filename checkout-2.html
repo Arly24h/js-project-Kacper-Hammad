@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="discription" content="checkout from Rainy-Day" />
+    <meta
+      name="discription"
+      content="checkout-2 of selected item from Rainy-Day"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +20,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Rainy-Day | checkout-1</title>
+    <title>Rainy-Day | checkout-2</title>
   </head>
   <body>
     <header class="l-header">
@@ -52,18 +55,7 @@
     </header>
 
     <main class="l-main">
-      <section class="c-container-checkout">
-        <section class="c-container-membership-card">
-          <div class="c-free-shipping">
-            <p>Free shipping for members.</p>
-            <p class="c-text-color">Get a membership card</p>
-          </div>
-          <div>
-            <a href="/checkout-2.html"
-              ><i class="fa-solid fa-xmark membership-card-cross"></i
-            ></a>
-          </div>
-        </section>
+      <section class="c-container-checkout-2">
         <section class="c-cart-summary">
           <article class="col-left-section">
             <div>
@@ -106,14 +98,10 @@
                 <h2>Summary</h2>
                 <p>Promocode</p>
               </div>
-              <div>
-                <input
-                  type="text"
-                  id="promocode"
-                  class="input-promocode"
-                  placeholder="Enter Promocode"
-                />
-                <a href="#" class="apply-btn">Apply +</a>
+              <div class="promo-container">
+                <input type="text" class="promo-input" />
+                <label class="promo-placeholder"></label>
+                <a href="/checkout-3.html" class="apply-btn">Apply +</a>
               </div>
             </section>
             <section class="c-price-section">
