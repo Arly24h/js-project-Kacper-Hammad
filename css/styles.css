@@ -835,6 +835,101 @@ h2 {
   text-decoration: none;
   padding: 10px;
 }
+
+/* women-jacket */
+
+.container-women-jacket {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 80px;
+  gap: var(--gap-md);
+}
+/* .container-hero-section {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+} */
+.c-summary {
+  color: #ec5252;
+  text-decoration: underline;
+}
+.c-filter-section {
+  display: flex;
+  justify-content: space-between;
+}
+.col-left-filter-section {
+  display: flex;
+  gap: var(--font-xs);
+  align-items: center;
+}
+.col-right-filter-section {
+  display: flex;
+  gap: var(--font-xs);
+  align-items: center;
+}
+.container-filters-plus-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--font-s);
+}
+.col-left-container-items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--font-md);
+}
+.c-gender {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* .c-section-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xs);
+  } */
+.c-section-colors {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+}
+.c-colors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.c-choose-colors {
+  display: flex;
+  gap: var(--gap-md);
+  /* justify-content: center; */
+}
+.c-sizes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.c-col-sizes {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+}
+.c-row-sizes {
+  display: flex;
+  gap: var(--gap-md);
+}
+
+.col-right-container-items {
+  display: grid;
+  gap: var(--font-s);
+  grid-template-columns: repeat(3, 1fr);
+}
+.image-container {
+  width: 100%;
+}
+@media (width <= 600px) {
+  .container-filters-plus-item {
+    grid-template-columns: 1fr;
+  }
+}
 /* Footer Section */
 
 .c-footer {
@@ -849,6 +944,9 @@ h2 {
   .c-footer {
     display: grid;
     grid-template-columns: auto;
+  }
+  .container-women-jacket {
+    padding: 0px 20px;
   }
 }
 .c-left-footer {
