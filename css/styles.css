@@ -883,11 +883,7 @@ h2 {
   padding: 20px 80px;
   gap: var(--gap-md);
 }
-/* .container-hero-section {
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-} */
+
 .c-summary {
   color: #ec5252;
   text-decoration: underline;
