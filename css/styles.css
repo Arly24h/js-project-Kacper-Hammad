@@ -969,6 +969,17 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+.scale {
+  transition: transform 0.3 ease ease-in-out;
+}
+.scale:hover {
+  transform: scale(0.8);
+}
+@media (width <= 768px) {
+  .col-right-container-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 /* Footer Section */
 
 .c-footer {
