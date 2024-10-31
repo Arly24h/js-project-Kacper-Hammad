@@ -56,7 +56,7 @@ body {
   /* overflow-y: scroll; */
 }
 .l-footer {
-  flex: 1 0 auto;
+  /* flex: 1 0 auto; */
   padding-top: 60px;
   animation: slide-in-up 1s cubic-bezier(0, -0.03, 0.15, 1.11);
 }
@@ -363,6 +363,7 @@ nav .active {
     }
   }
 }
+
 /* contact us */
 
 .c-section-contact {
@@ -382,7 +383,7 @@ nav .active {
 .c-form-section {
   display: flex;
   /* justify-content: center; */
-  align-items: center;
+  /* align-items: center; */
 }
 .c-container {
   width: 100%;
@@ -390,19 +391,45 @@ nav .active {
 .c-fieldet {
   border: 2px solid #6ab3dc;
   display: flex;
+  align-items: center;
+  /* width: fit-content; */
 }
 .c-form {
   display: flex;
   /* grid-template-columns: auto 1fr; */
-  gap: var(--gap-md);
-  align-items: center;
+  gap: var(--gap-xs);
+  /* align-items: center; */
+  justify-content: center;
+
+  /* border: 1px solid #6ab3dc; */
 }
-@media (width <=600px) {
+@media (width <= 600px) {
   .c-form {
     flex-direction: column;
     align-items: center;
+    gap: var(--gap-md);
+  }
+  .c-col-form-right {
+    gap: var(--gap-lg);
+  }
+  .c-section-contact {
+    padding: 10px;
+  }
+  .c-name-form {
+    display: flex;
+    gap: var(--gap-xs);
+  }
+  .c-email-phone {
+    gap: var(--gap-xs);
   }
 }
+@media (width <= 768px) {
+  .c-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .c-col-form-left {
   display: flex;
   flex-direction: column;
@@ -463,7 +490,9 @@ div > p {
   color: white;
   background-color: #5642da;
 }
+
 /*jacket-product  */
+
 .c-product-hero {
   display: flex;
   flex-direction: column;
@@ -476,7 +505,7 @@ div > p {
 }
 .c-product-details {
   display: flex;
-  gap: 8rem;
+  gap: 2rem;
 }
 .r-col-product-hero {
   display: flex;
@@ -950,6 +979,7 @@ h2 {
   gap: var(--gap-md);
   padding: 40px;
 }
+
 @media (width <= 600px) {
   .c-footer {
     display: grid;
@@ -970,7 +1000,7 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: var(--gap-md);
-  font-size: var(--font-s);
+  /* font-size: var(--font-s); */
   align-items: center;
   justify-content: center;
 }
@@ -992,7 +1022,7 @@ h2 {
 
 .c-dacuments-footer {
   display: flex;
-  gap: var(--gap-md);
+  gap: var(--gap-s);
 }
 div a {
   color: #000000;
