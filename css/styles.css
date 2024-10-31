@@ -880,7 +880,7 @@ h2 {
 .container-women-jacket {
   display: flex;
   flex-direction: column;
-  padding: 30px 80px;
+  padding: 20px 80px;
   gap: var(--gap-md);
 }
 /* .container-hero-section {
@@ -895,6 +895,7 @@ h2 {
 .c-filter-section {
   display: flex;
   justify-content: space-between;
+  font-size: 0.8rem;
 }
 .col-left-filter-section {
   display: flex;
@@ -910,6 +911,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: var(--font-s);
+  font-size: 0.8rem;
 }
 .col-left-container-items {
   display: flex;
