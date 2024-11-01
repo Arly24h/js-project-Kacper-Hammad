@@ -142,7 +142,9 @@ nav a {
   nav,
   .c-nav-bar-list,
   .c-nav-icons {
-    display: block;
+    /* display: block; */
+    display: flex;
+    gap: var(--gap-xs);
   }
   .hamburger-icon {
     display: none;
