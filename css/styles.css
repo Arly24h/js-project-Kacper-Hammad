@@ -176,7 +176,7 @@ nav .active {
   position: relative;
   min-height: 400px;
   width: 100%;
-  background-image: url(./media/images/hero-image.jpg);
+  background-image: url(../media/images/hero-image.jpg);
   background-size: cover;
   background-position: center;
 }
