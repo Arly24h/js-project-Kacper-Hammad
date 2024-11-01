@@ -9,8 +9,8 @@ This bootstrap template is intended to help you deliever a amazing website which
 <!-- You must replace these links -->
 
 - [Brief](https://noroff.sharepoint.com/:b:/s/FED1OSL24/EXvJ9TMGmU9Fsok1mQq1H08BKzQaheKEX5-p2e9czBsIdQ?e=TDbpCH)
-- [Design](_LINK_TO_FIGMA_)
-- [Production deploy](_LINK_TO_WEBSITE_)
+- [Design](https://www.figma.com/design/A4bLZaujLKWmCdF0X2iyQr/Assignment-Hammad?node-id=303-768&t=wd42snckw2guYvmc-1)
+- [Production deploy](https://noroff-fed-campus-assignments.github.io/fed1-html-css-ca-vanilla-hammad-kacper/index.html)
 - [Deployment CI](_LINK_TO_NETLIFY_VERCEL_DASHBOARD_)
 
 ## Deployment
