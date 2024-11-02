@@ -456,13 +456,6 @@ div > p {
   flex-direction: column;
   gap: var(--gap-s);
 }
-/* .c-social-links {
-  display: flex;
-  gap: var(--gap-xs);
-}
-.c-social {
-  color: #5642da;
-} */
 .c-col-form-right {
   display: flex;
 
