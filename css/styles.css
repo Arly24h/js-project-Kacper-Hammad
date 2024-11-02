@@ -1036,6 +1036,15 @@ h2 {
 .c-col-right-footer > div > p {
   margin: 0%;
 }
+.social-media {
+  display: flex;
+  gap: var(--gap-xs);
+  font-size: 1.2rem;
+}
+
+.social-media span a:hover {
+  color: #344ccc;
+}
 
 .c-dacuments-footer {
   display: flex;
