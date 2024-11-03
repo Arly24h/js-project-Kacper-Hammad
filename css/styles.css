@@ -600,7 +600,7 @@ p {
   display: flex;
   gap: var(--gap-s);
 }
-.select-jacket-description{
+.select-jacket-description {
   padding-left: 80px;
   max-width: 830px;
 }
@@ -720,9 +720,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 400px;
-    padding: 0 0 0 80px;
   }
   .card {
     display: flex;
@@ -772,6 +769,9 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: var(--gap-s);
+}
+.c-input-promo {
+  display: flex;
 }
 .c-price-section {
   display: flex;
@@ -915,14 +915,14 @@ h2 {
   }
   .btn-go-back {
     justify-content: center;
-    }
-    .select-jacket-description{
-      padding-right: 80px;
-    }
+  }
+  .select-jacket-description {
+    padding-right: 80px;
+  }
 }
 @media (width <= 460px) {
-  .select-jacket-description{
-    padding: 0 50px 0 50px ;
+  .select-jacket-description {
+    padding: 0 50px 0 50px;
   }
 }
 .heading-order {
