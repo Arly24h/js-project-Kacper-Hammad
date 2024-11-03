@@ -488,7 +488,6 @@ div > p {
 
   flex-direction: column;
   gap: var(--gap-md);
-  padding: 30px;
 }
 .c-name-form {
   display: flex;
