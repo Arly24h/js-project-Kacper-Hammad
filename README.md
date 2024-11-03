@@ -99,5 +99,6 @@ You are allowed to use external libraries such as animation.css or open-props, b
 
 ## Authors
 
-- _YOURE_NAME_ (@_your_github_username_)
+- Muhammad Hammad Khan (@Hammadniazi)
+- Kacper Dawid Poniewierski (@Arly24h)
 - Monde Sineke (@S3ak)
