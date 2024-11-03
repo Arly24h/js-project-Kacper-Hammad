@@ -600,6 +600,10 @@ p {
   display: flex;
   gap: var(--gap-s);
 }
+.select-jacket-description{
+  padding-left: 80px;
+  max-width: 830px;
+}
 .c-btn-container {
   display: flex;
   flex-direction: column;
@@ -718,6 +722,7 @@ p {
     justify-content: center;
     align-items: center;
     width: 400px;
+    padding: 0 0 0 80px;
   }
   .card {
     display: flex;
@@ -910,6 +915,14 @@ h2 {
   }
   .btn-go-back {
     justify-content: center;
+    }
+    .select-jacket-description{
+      padding-right: 80px;
+    }
+}
+@media (width <= 460px) {
+  .select-jacket-description{
+    padding: 0 50px 0 50px ;
   }
 }
 .heading-order {
