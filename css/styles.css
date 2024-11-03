@@ -318,16 +318,27 @@ nav .active {
   color: var(--white-color);
   gap: var(--gap-md);
 }
-@media (width <= 768px) {
+@media (width <= 1030px) {
   .c-heading-btn {
     top: 180px;
     font-size: small;
   }
-}
-@media (width <= 450px) {
-  .c-heading-btn {
-    top: 240px;
-    font-size: small;
+
+  @media (width <= 768px) {
+    .c-heading-btn {
+      top: 180px;
+      font-size: small;
+    }
+  }
+  @media (width <= 360px) {
+    .c-heading-btn {
+      top: 140px;
+      left: 5px;
+      font-size: small;
+    }
+    .c-href {
+      gap: var(--font-xs);
+    }
   }
 }
 
