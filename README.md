@@ -21,8 +21,8 @@ You can update your deployment pipeling by editing the [vercel.json](https://ver
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FS3ak%2Ffed1-exam-vanilla-frontend-website&env=API_TOKEN,API_SECRET&envDescription=The%20API_TOKEN%20is%20needed%20to%20access%20a%20secure%20API%20endpoint.%20This%20can%20be%20the%20Authorization%20%60Bearer%20Token%60%20header%20used%20to%20make%20queries.&envLink=https%3A%2F%2Fvitejs.dev%2Fguide%2Fenv-and-mode.html&project-name=exam-front-end&repository-name=fed1-exam-vanilla-frontend-website&skippable-integrations=1)
 
 ## Report
-
 https://docs.google.com/document/d/1nF4nTcy90brqE2PggLRuXewHQT18QCQariucM37Jb04/edit?tab=t.0
+
 
 ## Getting Started
 
