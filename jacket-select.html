@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="discription"
-      content="Get real authentic rainy jacket from Rainy-Day"
+      content="selected a jacket from our Rainy-Day products"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,29 +20,27 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Rainy-Day | Home</title>
+    <title>Rainy-Day | Jacket Select</title>
   </head>
   <body>
+    <main>
     <header class="l-header">
-      <div class="c-nav-bar">
+      <section class="c-nav-bar">
         <div>
           <img
             src="./media/images/RainyDays_Logo.png"
             alt="logo-rainyday"
             class="logo-image"
-            aria-describedby="Logo of the company"
           />
         </div>
-
         <!-- Hamburger manu -->
-
         <input type="checkbox" id="manu-checkbox" class="manu-checkbox" />
         <label for="manu-checkbox" class="hamburger-icon"
           ><span class="fas fa-bars hamburger"></span>
           <span class="fa-solid fa-xmark close"></span
         ></label>
-        <nav class="c-nav-bar-list">
-          <a href="./index.html" class="active">Home</a>
+      <nav class="c-nav-bar-list">
+          <a href="./index.html">Home</a>
           <a href="./mens-jackets.html">Men</a>
           <a href="./women-jackets.html">Women</a>
           <a href="./about.html">About</a>
@@ -54,40 +52,111 @@
           <i class="fa-regular fa-heart"></i>
           <i class="fa-solid fa-cart-shopping"></i>
         </div>
-      </div>
+      </section>
     </header>
     <main class="l-main">
-      <div class="c-hero">
-        <article class="c-hero-absolute">
-          <div>
-            <h1>New Arrivals</h1>
-          </div>
-          <div class="c-href">
-            <span>
-              <a href="./mens-jackets.html" class="c-btn" aria-describedby="shop men's">SHOP MEN'S</a>
-            </span>
-            <span>
-              <a href="./women-jackets.html" class="c-btn" aria-describedby="shop women's">SHOP WOMEN'S</a>
-            </span>
-          </div>
-        </article>
-      </div>
-
-      <!-- Trending section -->
-
-      <section class="c-trending u-sec-gutter">
-        <div class="c-heading-trending">
-          <h2>Trending Rain Jacket's</h2>
-        </div>
-        <article class="c-container-trending">
-          <div class="c-img-desc-trinding">
+      <section class="c-product-hero">
+        <h1 class="main-text">Beta Jacket Women’s</h1>
+        <section class="c-product-details">
+          <article class="l-col-product-hero">
             <div>
+              <img class="my-jacket"
+                src="./media/images/beta-dark-blue-jacket-women.png"
+                alt="image of a select product"
+                aria-describedby="beta jacket women's"
+              />
+            </div>
+            <div class="product-in-color">
               <a href="./jacket-select.html">
-                <img
-                  src="./media/images/munich-insulated-raincoat-green-men.png"
-                  alt="trending munich insulated raincoat for men"
-                  aria-describedby="Men’n Munich Insulated Raincoat"
+              <img
+                src="./media/images/beta-jacket-black-women.png"
+                width="55px"
+                height="60px"
+                alt="product in black"
               /></a>
+              <a href="./jacket-select.html">
+              <img
+                src="./media/images/beta-jacket-gray-women.png"
+                width="55px"
+                height="60px"
+                alt="product in gray"
+                aria-describedby="beta jacket gray women's"
+              /></a>
+              <a href="./jacket-select.html">
+              <img
+                src="./media/images/beta-jacket-red-women.png"
+                width="55px"
+                height="60px"
+                alt="product in red"
+                aria-describedby="beta jacket red women's"
+              /></a>
+            </div>
+          </article>
+          <article class="r-col-product-hero">
+            <p>Price: 500 kr</p>
+            <p>COLOR: BLUE</p>
+            <section class="color">
+              <span class="dot-black" aria-describedby="color blakc"></span>
+              <span class="dot-red" aria-describedby="color red"></span>
+              <span class="dot-gray" aria-describedby="color gray"></span>
+              <span class="dot-yellow" aria-describedby="color yellow"></span>
+              <span class="dot-cyan-blue" aria-describedby="color cyran blue"></span>
+            </section>
+            <p>PRICE NOW: 500 kr <del>700 kr</del></p>
+            <p>SIZES:</p>
+            <div class="size-product">
+              <input type="button" value="S" aria-describedby="size s"/>
+              <input type="button" value="M" aria-describedby="size m"/>
+              <input type="button" value="L"  aria-describedby="size l"/>
+              <input type="button" value="XL"  aria-describedby="size xl"/>
+              <input type="button" value="XXl" aria-describedby="size xxl"/>
+            </div>
+            <div class="c-btn-container">
+              <div class="add-to-cart">
+                <a href="./checkout-1.html" class="btn-addtocart" aria-describedby="add to cart">Add To Cart</a>
+              </div>
+              <p class="c-shipping">Members get free shipping.</p>
+            </div>
+          </article>
+        </section>
+      </section>
+      <div class="select-jacket-description">
+        <p>
+          The Beta Jacket Women's by Arc'teryx is a lightweight, durable, and versatile hardshell jacket 
+          designed for outdoor activities like hiking, climbing, and mountaineering. It features GORE-TEX® 
+          fabric for waterproof, windproof, and breathable protection, and it has a minimalist design for enhanced 
+          mobility. With a helmet-compatible hood, adjustable cuffs, and articulated sleeves, the jacket is ideal 
+          for high-performance adventures in various weather condition
+        </p>
+      </div>
+      <hr/>
+      <div class="c-faq">
+        <h3>Shipping & Returns</h3>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <hr />
+      <div class="c-faq">
+        <h3>Customer Reviews</h3>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <hr />
+      <div class="c-faq">
+        <h3>Q & A</h3>
+        <div class="c-question">
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+      </div>
+      <hr />
+      <div class="c-people-bought">
+        <h3>People Also Boughts</h3>
+        <article class="c-container-trending">
+          <article class="c-img-desc-trinding">
+            <div>
+              <img
+                src="./media/images/munich-insulated-raincoat-green-men.png"
+                alt="trending minuch insulated raincoat jackets"
+                aria-describedby="Men's Munich Insulated Raincoat"
+              />
             </div>
             <div>
               <p class="p-treding">Men’n Munich Insulated Raincoat</p>
@@ -100,16 +169,15 @@
               <i class="fa-regular fa-star star-checked"></i>
               <i class="fa-regular fa-star star-checked"></i>
             </span>
-          </div>
-          <div class="c-img-desc-trinding">
+          </article>
+          <article class="c-img-desc-trinding">
             <div>
-              <a href="./jacket-select.html">
-                <img
-                  src="./media/images/crew-sailing-jacket-orange-women.png"
-                  class="c-img-treding"
-                  alt="trending crew sailing jackets women"
-                  aria-describedby="Women’s Crew Sailing Jacket"
-              /></a>
+              <img
+                src="./media/images/crew-sailing-jacket-orange-women.png"
+                class="c-img-treding"
+                alt="trending crew sailing jackets"
+                aria-describedby="Women’s Crew Sailing Jacket"
+              />
             </div>
             <div>
               <p class="p-treding">Women’s Crew Sailing Jacket</p>
@@ -122,16 +190,15 @@
               <i class="fa-regular fa-star star-checked"></i>
               <i class="fa-regular fa-star"></i>
             </span>
-          </div>
-          <div class="c-img-desc-trinding">
+          </article>
+          <article class="c-img-desc-trinding">
             <div>
-              <a href="./jacket-select.html">
-                <img
-                  src="./media/images/crew-sailing-jacket-2-blue-men.png"
-                  class="c-img-treding"
-                  alt="trending crew sailing jackets2.0"
-                  aria-describedby="Men’s Crew Sailing Jacket 2.0"
-              /></a>
+              <img
+                src="./media/images/crew-sailing-jacket-2-blue-men.png"
+                class="c-img-treding"
+                alt="trending crew sailing jackets 2.0"
+                aria-describedby="Men’s Crew Sailing Jacket 2.0"
+              />
             </div>
             <div>
               <p class="p-treding">Men’s Crew Sailing Jacket 2.0</p>
@@ -144,16 +211,15 @@
               <i class="fa-regular fa-star star-checked"></i>
               <i class="fa-regular fa-star star-checked"></i>
             </span>
-          </div>
-          <div class="c-img-desc-trinding">
+          </article>
+          <article class="c-img-desc-trinding">
             <div>
-              <a href="./jacket-select.html">
-                <img
-                  src="./media/images/voyage-raincoat-white-women.png"
-                  class="c-img-treding"
-                  alt="trending voyage raincoat jackets"
-                  aria-describedby="Women's Voyage Raincoat"
-              /></a>
+              <img
+                src="./media/images/voyage-raincoat-white-women.png"
+                class="c-img-treding"
+                alt="trending voyage raincaot jackets"
+                aria-describedby="Women's Voyage Raincoat"
+              />
             </div>
             <div>
               <p class="p-treding">Women's Voyage Raincoat</p>
@@ -166,16 +232,15 @@
               <i class="fa-regular fa-star star-checked"></i>
               <i class="fa-regular fa-star star-checked"></i>
             </span>
-          </div>
-          <div class="c-img-desc-trinding">
+          </article>
+          <article class="c-img-desc-trinding">
             <div>
-              <a href="./jacket-select.html">
-                <img
-                  src="./media/images/essence-light-rain-jacket-green-women.png"
-                  class="c-img-treding"
-                  alt="trending essence light rain jacket jackets"
-                  aria-describedby="Women’s Essence Light Rain Jacket"
-              /></a>
+              <img
+                src="./media/images/essence-light-rain-jacket-green-women.png"
+                class="c-img-treding"
+                alt="trending essence light rain jackets"
+                aria-describedby="Women’s Essence Light Rain Jacket"
+              />
             </div>
             <div>
               <p class="p-treding">Women’s Essence Light Rain Jacket</p>
@@ -188,16 +253,15 @@
               <i class="fa-regular fa-star star-checked"></i>
               <i class="fa-regular fa-star"></i>
             </span>
-          </div>
+          </article>
           <article class="c-img-desc-trinding">
             <div>
-              <a href="./jacket-select.html">
-                <img
-                  src="./media/images/moss-raincaot-yellow-men.png"
-                  class="c-img-treding"
-                  alt="trending moss raincoat jackets"
-                  aria-describedby="Men's Moss Raincoat"
-              /></a>
+              <img
+                src="./media/images/moss-raincaot-yellow-men.png"
+                class="c-img-treding"
+                alt="trending moss raincaot jackets"
+                aria-describedby="Men's Moss Raincoat"
+              />
             </div>
             <div>
               <p class="p-treding">Men's Moss Raincoat</p>
@@ -211,15 +275,14 @@
               <i class="fa-regular fa-star star-checked"></i>
             </span>
           </article>
-          <div class="c-img-desc-trinding">
+          <article class="c-img-desc-trinding">
             <div>
-              <a href="./jacket-select.html">
-                <img
-                  src="./media/images/vancouver-raincoat-black-men.png"
-                  class="c-img-treding"
-                  alt="trending vancouver raincaot jackets"
-                  aria-describedby="Men’s Vancouver Raincoat"
-              /></a>
+              <img
+                src="./media/images/vancouver-raincoat-black-men.png"
+                class="c-img-treding"
+                alt="trending vancouver raincoat jackets"
+                aria-describedby="Men’s Vancouver Raincoat"
+              />
             </div>
             <div>
               <p class="p-treding">Men’s Vancouver Raincoat</p>
@@ -232,77 +295,8 @@
               <i class="fa-regular fa-star star-checked"></i>
               <i class="fa-regular fa-star star-checked"></i>
             </span>
-          </div>
+          </article>
         </article>
-      </section>
-
-      <!-- collection section -->
-
-      <div class="c-collection">
-        <div class="c-col-collection">
-          <div class="c-img-collection">
-            <img
-              class="image"
-              src="./media/images/odin-collection-pic.png"
-              alt="odin collection"
-            />
-          </div>
-          <section class="c-heading-btn">
-            <div>
-              <h2>ODIN COLLECTION</h2>
-            </div>
-            <div class="c-href">
-              <span>
-                <a href="./mens-jackets.html" class="c-btn" aria-describedby="shop men's">SHOP MEN'S</a>
-              </span>
-              <span>
-                <a href="./women-jackets.html" class="c-btn" aria-describedby="shop women's">SHOP WOMEN'S</a>
-              </span>
-            </div>
-          </section>
-        </div>
-        <article class="c-col-collection">
-          <div>
-            <img
-              class="image"
-              src="./media/images/explore-rainjacket-pic.png"
-              alt="odin collection"
-            />
-          </div>
-          <section class="c-heading-btn">
-            <div>
-              <h2>EXPLAIN RAINWEAR</h2>
-            </div>
-            <div class="c-href">
-              <span>
-                <a href="./mens-jackets.html" class="c-btn" aria-describedby="shop men's">SHOP MEN'S</a>
-              </span>
-              <span>
-                <a href="./women-jackets.html" class="c-btn" aria-describedby="shop women's">SHOP WOMEN'S</a>
-              </span>
-            </div>
-          </section>
-        </article>
-      </div>
-
-      <!-- main-last-section -->
-
-      <div class="c-last-section">
-        <div class="c-image-section">
-          <img
-            class="image-with-btn"
-            src="./media/images/home-main-last-pic.png"
-            alt="picture with buttons"
-          />
-        </div>
-        <div class="c-pic-btn">
-          <span>
-            <a href="./mens-jackets.html" class="c-btn" aria-describedby="shop men's">SHOP MEN'S</a>
-          </span>
-          <span>
-            <a href="./women-jackets.html" class="c-btn" aria-describedby="shop women's">SHOP WOMEN'S</a>
-          </span>
-        </div>
       </div>
     </main>
 
@@ -310,47 +304,46 @@
 
     <footer class="l-footer">
       <article class="c-footer">
-        <div class="c-left-footer">
+        <section class="c-left-footer">
           <div>
             <img
               src="./media/images/RainyDays_Logo.png"
               alt="logo-rainyday"
               class="logo-image"
+              aria-describedby="Logo of the company"
             />
           </div>
           <p>
             Premium rain jackets combining style, comfort, and protection for
             all
           </p>
-        </div>
-        <div class="c-middle-footer">
+        </section>
+        <section class="c-middle-footer">
           <div>
             <p>
               Subscribe to stay tuned for new designs and latest updates. Let’s
               do it!
             </p>
           </div>
-          <div>
-            <form>
-              <label for="email"></label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter your email"
-              />
-              <input type="submit" value="Subcribe" />
-            </form>
-          </div>
+          <form>
+            <label for="email"></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+            <input type="submit" value="Subcribe" />
+          </form>
           <div class="c-dacuments-footer">
             <a href="/">Privacy Policy</a>
             <a href="/">Terms of Use</a>
             <a href="/">Sales and Refunds</a>
             <a href="/">Legal</a>
           </div>
-        </div>
-        <div class="c-right-footer">
-          <div class="c-col-right-footer">
+        </section>
+        <section class="c-right-footer">
+          <article class="c-col-right-footer">
             <div>
               <p>Follow us</p>
             </div>
@@ -368,7 +361,7 @@
                   ><i class="fa-brands fa-square-twitter"></i></a
               ></span>
             </div>
-          </div>
+          </article>
           <article class="c-col-right-footer">
             <div>
               <p>Call us</p>
@@ -377,7 +370,7 @@
               <p>47737410</p>
             </div>
           </article>
-        </div>
+        </section>
       </article>
     </footer>
   </body>
