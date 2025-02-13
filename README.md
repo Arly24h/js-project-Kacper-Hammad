@@ -78,10 +78,10 @@ The product list page should display a list of all products fetched from the API
 
 Here is the API documentation for each of the endpoints.
 
-[Rainy Days API docs](https://docs.noroff.dev/docs/v2/e-commerce/rainy-days)
-[GameHub API docs](https://docs.noroff.dev/docs/v2/e-commerce/gamehub)
-[Square Eyes API docs](https://docs.noroff.dev/docs/v2/e-commerce/square-eyes)
-The base URL for the API is https://v2.api.noroff.dev/.
+- [Rainy Days API docs](https://docs.noroff.dev/docs/v2/e-commerce/rainy-days)
+- [GameHub API docs](https://docs.noroff.dev/docs/v2/e-commerce/gamehub)
+- [Square Eyes API docs](https://docs.noroff.dev/docs/v2/e-commerce/square-eyes)
+- The base URL for the API is https://v2.api.noroff.dev/.
 
 Choosing appropriate variable and function names will form part of your assessment, as will proper and consistent formatting of your code.
 
