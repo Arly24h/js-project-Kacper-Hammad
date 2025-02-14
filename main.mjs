@@ -1,9 +1,10 @@
 import { api_Url, error_message_default, currency } from "./constants.mjs";
 import { createHTML, clearNode } from "./utils.mjs";
 const containerEl = document.querySelector("#js-products");
+const sortByEl = document.querySelector("#js-sort-by");
 
 let products = [];
-if (!containerEl) {
+if (!containerEl || !sortByEl) {
   console.error("JavaScript is not working");
 } else {
   setup();
@@ -12,6 +13,21 @@ if (!containerEl) {
 function setup() {
   getProduct();
 }
+
+// sort-by
+
+sortByEl.addEventListener("change", (event) => {
+  const val = event.target.value;
+  if (val === "asc") {
+    sortByAccending();
+  } else if (val === "dec") {
+    sortByDecending();
+  } else if (val === "none") {
+    location.reload();
+  }
+  renderProductList(products);
+  // console.log("Product after", products);
+});
 
 async function getProduct() {
   clearNode(containerEl);
@@ -70,7 +86,19 @@ function productTemplate({
       
       `;
 }
+function sortByAccending() {
+  products.sort((a, b) => {
+    return a.price - b.price;
+  });
+}
+function sortByDecending() {
+  products.sort((a, b) => {
+    return b.price - a.price;
+  });
+}
+
 function renderProductList(products) {
+  clearNode(containerEl);
   products.forEach(({ id, title, image, price, description }) => {
     const template = productTemplate({
       id,

@@ -256,26 +256,6 @@ nav .active {
   display: flex;
   justify-content: center;
 }
-.c-container-trending {
-  display: flex;
-  gap: var(--gap-lg);
-  overflow-x: scroll;
-}
-.p-treding {
-  margin: 0px;
-}
-.c-img-desc-trinding {
-  margin: 0px;
-  display: flex;
-  flex-direction: column;
-}
-.fa-star {
-  font-size: var(--font-);
-  color: lightgray;
-}
-.star-checked {
-  color: gold;
-}
 
 /* collection section */
 
@@ -1346,5 +1326,5 @@ div a {
   ) {
   /* background-color: var(--brand-instagram-blue); */
   border-radius: var(--red-12);
-  color: aliceblue;
+  /* color: aliceblue; */
 }
