@@ -1314,9 +1314,9 @@ div a {
 
 .c-input-search {
   border-radius: 10px;
-  border: 1px solid white;
+  border: 2px solid rgb(0, 0, 0);
   padding: 2px;
-  background-color: #383333;
+  background-color: #ffffff;
 }
 
 :where(

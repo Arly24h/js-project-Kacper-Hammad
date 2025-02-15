@@ -89,13 +89,24 @@
         <div class="c-heading-trending">
           <h2>Trending Rain Jacket's</h2>
         </div>
-        <section class="c-filter">
+        <section class="c-filters">
           <form>
             <select name="sort-by" id="js-sort-by">
               <option value="none">None</option>
               <option value="dec">Price high-low</option>
               <option value="asc">Price low-high</option>
             </select>
+          </form>
+
+          <form class="c-search" name="searchForm">
+            <label for="search"> Search</label>
+            <input
+              class="c-input-search"
+              type="text"
+              name="search"
+              id="search"
+              placeholder="..."
+            />
           </form>
         </section>
         <section>

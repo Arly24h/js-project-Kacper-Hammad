@@ -2,6 +2,7 @@ import { api_Url, error_message_default, currency } from "./constants.mjs";
 import { createHTML, clearNode } from "./utils.mjs";
 const containerEl = document.querySelector("#js-products");
 const sortByEl = document.querySelector("#js-sort-by");
+const searchInputEl = document.querySelector("#search");
 
 let products = [];
 if (!containerEl || !sortByEl) {
@@ -26,7 +27,6 @@ sortByEl.addEventListener("change", (event) => {
     location.reload();
   }
   renderProductList(products);
-  // console.log("Product after", products);
 });
 
 async function getProduct() {
@@ -35,6 +35,7 @@ async function getProduct() {
     const response = await fetch(api_Url);
     const { data } = await response.json();
     products = data;
+    window.localStorage.setItem("products", JSON.stringify(products));
     renderProductList(products);
   } catch (error) {
     console.error(error_message_default, error?.message);
@@ -112,3 +113,16 @@ function renderProductList(products) {
     containerEl.append(newEl);
   });
 }
+
+searchInputEl.addEventListener("input", (event) => {
+  const val = event.target.value;
+  const products = JSON.parse(window.localStorage.getItem("products"));
+  if (!Array.isArray(products)) {
+    alert("Invalid product data in localStorage");
+    return;
+  }
+  const searchedProduct = products.filter((product) => {
+    return product.title.toLowerCase().includes(val.trim().toLowerCase());
+  });
+  renderProductList(searchedProduct);
+});
