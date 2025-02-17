@@ -31,6 +31,7 @@ sortByEl.addEventListener("change", (event) => {
 
 async function getProduct() {
   clearNode(containerEl);
+  createLaodingSkeleton(5);
   try {
     const response = await fetch(api_Url);
     const { data } = await response.json();
@@ -57,16 +58,11 @@ function productTemplate({
         <a href =${detailsUrl}>
         <img src="${imgUrl}" alt="${imgAl}" />
         </a>
-      </div
-
-      <div class="c-product-preview-info">
-        <h1 class="c-product-preview-title">
-         <a href = ${detailsUrl}> ${title}</a>
-        </h1>
-
+      </div>
 
       <div class="product-info">
-        <h1 class="product-title">${title}</h1>
+        <h1 class="product-title">
+        <a href = ${detailsUrl}>  ${title} </a></h1>
         <div class="product-rating">
           <span>&#9733;</span>
           <span>&#9733;</span>
@@ -87,6 +83,30 @@ function productTemplate({
       
       `;
 }
+function productSkeletonTemplate() {
+  return `
+  <article class="product-details">
+    <div class="product-image">
+      <div class="skeleton skeleton-image"></div>
+    </div>
+    <div class="product-info">
+      <div class="skeleton skeleton-title"></div>
+      <div class="skeleton skeleton-rating"></div>
+      <div class="skeleton skeleton-price"></div>
+      <div class="skeleton skeleton-description"></div>
+      <div class="skeleton skeleton-button"></div>
+    </div>
+  </article>
+  `;
+}
+function createLaodingSkeleton(count = 3) {
+  [...Array(count)].forEach((i) => {
+    const template = productSkeletonTemplate();
+    const newEl = createHTML(template);
+    containerEl.append(newEl);
+  });
+}
+
 function sortByAccending() {
   products.sort((a, b) => {
     return a.price - b.price;
