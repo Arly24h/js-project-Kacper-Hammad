@@ -1,5 +1,6 @@
 import { api_Url, error_message_default, currency } from "./constants.mjs";
 import { createHTML, clearNode } from "./utils.mjs";
+import { addToCart } from "./cart.mjs";
 const containerEl = document.querySelector("#js-products");
 const sortByEl = document.querySelector("#js-sort-by");
 const searchInputEl = document.querySelector("#search");
@@ -130,6 +131,16 @@ function renderProductList(products) {
       description,
     });
     const newEl = createHTML(template);
+    const btn = newEl.querySelector("button");
+    btn.addEventListener("click", () => {
+      addToCart({
+        id,
+        title,
+        price,
+        imgUrl: image.url,
+      });
+    });
+
     containerEl.append(newEl);
   });
 }
