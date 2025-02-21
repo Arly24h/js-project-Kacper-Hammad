@@ -1,5 +1,6 @@
 import { api_Url, error_message_default, currency } from "./constants.mjs";
 import { createHTML, clearNode } from "./utils.mjs";
+// import { addToCart} from "./cart.mjs";
 const containerEl = document.querySelector("#js-product-details");
 
 setup();
@@ -85,3 +86,16 @@ function detailsTemplates({
   
   `;
 }
+// function handleFormSubmit(event) {
+//   event.preventDefault();
+//   const formData = new FormData(event.target);
+
+//   addToCart({
+//     // id: getIdFromUrl(),
+//     id: formData.get("id"),
+//     imgUrl: formData.get("imgUrl"),
+//     title: formData.get("title"),
+//     price: formData.get("price"),
+//     quantity: Number(formData.get("quantity")),
+//   });
+// }

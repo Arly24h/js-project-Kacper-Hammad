@@ -5,7 +5,7 @@ const cartEl = document.querySelector("#js-cart");
 const cartCloseBtnEl = document.querySelector("#js-close-cart");
 const cartItemsEl = document.querySelector("#js-cart-items");
 const clearCartBtnEl = document.querySelector("#js-clear-cart");
-let productListCart = [];
+
 setup();
 
 function setup() {
@@ -14,32 +14,32 @@ function setup() {
   } else {
     cartToggleBtnEl.addEventListener("click", toggleCartDisplay);
     cartCloseBtnEl.addEventListener("click", toggleCartDisplay);
-    const storedCartItem =
-      JSON.parse(window.localStorage.getItem("cart")) || [];
+    clearCartBtnEl.addEventListener("click", clearCart);
 
-    productListCart = storedCartItem;
+    const products = getLocalStorage();
 
-    renderCartItems();
+    renderCartItems(products);
   }
 }
-function toggleCartDisplay() {
+
+export function toggleCartDisplay() {
   cartEl.classList.toggle("is-open");
 }
+
 export function addToCart({ id, imgUrl, price, title }) {
-  productListCart.push({
+  const products = getLocalStorage();
+  products.push({
     id,
     title,
     imgUrl,
     price,
     // quantity,
   });
-  window.localStorage.setItem("cart", JSON.stringify(productListCart)) || [];
-  console.log("productListCart>>>", productListCart);
 
-  renderCartItems();
-
-  console.log("productListCart>>", productListCart);
+  setLocalStorage(products);
+  renderCartItems(products);
 }
+
 function cartItemTemplate({
   imgUrl = "",
   alt = "No alt is provided",
@@ -80,11 +80,9 @@ function cartItemTemplate({
     
     `;
 }
-function renderCartItems() {
-  const newProductListCart =
-    JSON.parse(window.localStorage.getItem("cart")) || [];
+function renderCartItems(items = []) {
   clearNode(cartItemsEl);
-  newProductListCart.forEach(({ id, imgUrl, title, price, quantity }) => {
+  items.forEach(({ id, imgUrl, title, price, quantity }) => {
     const template = cartItemTemplate({
       id,
       imgUrl,
@@ -95,4 +93,15 @@ function renderCartItems() {
     const productItemEl = createHTML(template);
     cartItemsEl.appendChild(productItemEl);
   });
+}
+function clearCart() {
+  setLocalStorage([]);
+  renderCartItems([]);
+}
+
+function setLocalStorage(items = []) {
+  window.localStorage.setItem("cart", JSON.stringify(items));
+}
+function getLocalStorage() {
+  return JSON.parse(window.localStorage.getItem("cart")) || [];
 }
