@@ -3,21 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkout</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/checkout.css" />
     <script type="module" defer src="./src/check-out.mjs"></script>
+    <link rel="stylesheet" href="./css/cart.css" />
+    <script
+      src="https://kit.fontawesome.com/3cc0008f2c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/main.mjs" defer></script>
+    <script type="module" src="/cart.mjs" defer></script>
+
+    <title>Checkout</title>
   </head>
   <body>
     <header class="l-header">
-      <section id="js-nav-container"></section>
-      <section class="row c-title-section" id="js-title-section">
-        <a href="/"><h1>Checkout</h1></a>
+      <div class="c-nav-bar">
+        <div>
+          <img
+            src="./media/images/RainyDays_Logo.png"
+            alt="logo-rainyday"
+            class="logo-image"
+            aria-describedby="Logo of the company"
+          />
+        </div>
 
-        <button id="js-cart-toggle" class="c-cart-btn">
-          Cart<span class="c-cart-btn-counter" id="js-cart-count">0</span>
-        </button>
-      </section>
+        <!-- Hamburger manu -->
+
+        <input type="checkbox" id="manu-checkbox" class="manu-checkbox" />
+        <label for="manu-checkbox" class="hamburger-icon"
+          ><span class="fas fa-bars hamburger"></span>
+          <span class="fa-solid fa-xmark close"></span
+        ></label>
+        <nav class="c-nav-bar-list">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact Us</a>
+        </nav>
+        <div class="c-nav-icons">
+          <button id="js-cart-toggle" class="c-cart-btnn">
+            Cart <span id="js-cart-count" class="c-cart-counter">0</span>
+          </button>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -165,5 +193,18 @@
         </div>
       </div>
     </main>
+    <aside class="c-cart" id="js-cart">
+      <div class="c-cart-header">
+        <h2>Shopping Cart</h2>
+        <button class="c-close-cart" id="js-close-cart">&times;</button>
+      </div>
+      <div class="c-cart-items" id="js-cart-items"></div>
+      <div class="c-cart-footer">
+        <p>Total: <span id="js-cart-total">0</span></p>
+
+        <a href="./check-out.html" class="c-add-to-cart c-btn">Checkout </a>
+        <button class="btn" id="js-clear-cart">Clear Cart</button>
+      </div>
+    </aside>
   </body>
 </html>
