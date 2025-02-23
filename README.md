@@ -8,13 +8,13 @@
 
 - [Brief](https://lms.noroff.no/pluginfile.php/339051/mod_resource/content/4/JS1%20Course%20Assignment.pdf)
 - [Design](https://www.figma.com/design/A4bLZaujLKWmCdF0X2iyQr/Assignment-Hammad?node-id=303-768&t=wd42snckw2guYvmc-1)
-- [Deployment Link](https://js-ecommerce1.netlify.app/)
+- [Deployment Link](https://docs.google.com/document/d/1awQhRRXK3Tnssdg0MqgXcDs4u9IQ128T6EjbsvtShWE/edit?tab=t.0)
 
 ## Deployment
 
 Your deployment is done via static hosting provider (Neflify is recommended).
 
-[Deploy with Netlify](https://js-ecommerce1.netlify.app/)
+[Deploy with Netlify](https://docs.google.com/document/d/1awQhRRXK3Tnssdg0MqgXcDs4u9IQ128T6EjbsvtShWE/edit?tab=t.0)
 
 ## Report
 
