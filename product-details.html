@@ -4,24 +4,54 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rainy-Day | Product-datails</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <script type="module" src="./product-details.mjs" defer></script>
     <script type="module" src="./cart.mjs" defer></script>
+    <link rel="stylesheet" href="./css/cart.css" />
+    <script
+      src="https://kit.fontawesome.com/3cc0008f2c.js"
+      crossorigin="anonymous"
+    ></script>
+    
+  <title>Rainy-Day | Product-datails</title>
   </head>
   <body>
-    <header>
-      <a href="/"> <h1>More Products are!</h1></a>
-      <button id="js-cart-toggle" class="c-cart-btnn">
-        Cart <span id="js-cart-count" class="c-cart-counter">0</span>
-      </button>
+    <header class="l-header">
+      <div class="c-nav-bar">
+        <div>
+          <img
+            src="./media/images/RainyDays_Logo.png"
+            alt="logo-rainyday"
+            class="logo-image"
+            aria-describedby="Logo of the company"
+          />
+        </div>
+
+        <!-- Hamburger manu -->
+
+        <input type="checkbox" id="manu-checkbox" class="manu-checkbox" />
+        <label for="manu-checkbox" class="hamburger-icon"
+          ><span class="fas fa-bars hamburger"></span>
+          <span class="fa-solid fa-xmark close"></span
+        ></label>
+        <nav class="c-nav-bar-list">
+          <a href="./index.html" class="active">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact Us</a>
+        </nav>
+        <div class="c-nav-icons">
+          <button id="js-cart-toggle" class="c-cart-btnn">
+            Cart <span id="js-cart-count" class="c-cart-counter">0</span>
+          </button>
+        </div>
+      </div>
     </header>
     <main>
       <section class="product-datails" id="js-product-details"></section>
     </main>
     <footer>Made with heart by Hammad Khan and Kasper.</footer>
 
-    <aside class="c-cart" id="js-cart">
+   <aside class="c-cart" id="js-cart">
       <div class="c-cart-header">
         <h2>Shopping Cart</h2>
         <button class="c-close-cart" id="js-close-cart">&times;</button>
