@@ -1434,3 +1434,42 @@ button {
   justify-content: center;
   align-items: center;
 }
+
+.c-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #f0c14b;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.c-cart-btnn {
+  position: relative;
+}
+
+.c-cart-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: green;
+  border-radius: 100%;
+  position: absolute;
+  top: -1rem;
+  right: 1rem;
+}

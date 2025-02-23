@@ -54,7 +54,9 @@
           <i class="fa-solid fa-user"></i>
           <i class="fa-regular fa-heart"></i>
           <i class="fa-solid fa-cart-shopping"></i> -->
-          <button id="js-cart-toggle">Cart</button>
+          <button id="js-cart-toggle" class="c-cart-btnn">
+            Cart <span id="js-cart-count" class="c-cart-counter">0</span>
+          </button>
         </div>
       </div>
     </header>
@@ -299,7 +301,7 @@
       <div class="c-cart-footer">
         <p>Total: <span id="js-cart-total">0</span></p>
 
-        <button class="c-add-to-cart">Checkout</button>
+        <a href="./check-out.html" class="c-add-to-cart c-btn">Checkout </a>
         <button class="btn" id="js-clear-cart">Clear Cart</button>
       </div>
     </aside>
