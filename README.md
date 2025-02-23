@@ -6,20 +6,19 @@
 
 <!-- You must replace these links -->
 
-- [Brief]()
+- [Brief](https://lms.noroff.no/pluginfile.php/339051/mod_resource/content/4/JS1%20Course%20Assignment.pdf)
 - [Design](https://www.figma.com/design/A4bLZaujLKWmCdF0X2iyQr/Assignment-Hammad?node-id=303-768&t=wd42snckw2guYvmc-1)
-- [Production deploy]()
-- [Deployment CI](_LINK_TO_NETLIFY_VERCEL_DASHBOARD_)
+- [Deployment Link](https://js-ecommerce1.netlify.app/)
 
 ## Deployment
 
 Your deployment is done via static hosting provider (Neflify is recommended).
 
-[![Deploy with Netlify](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FS3ak%2Ffed1-exam-vanilla-frontend-website&env=API_TOKEN,API_SECRET&envDescription=The%20API_TOKEN%20is%20needed%20to%20access%20a%20secure%20API%20endpoint.%20This%20can%20be%20the%20Authorization%20%60Bearer%20Token%60%20header%20used%20to%20make%20queries.&envLink=https%3A%2F%2Fvitejs.dev%2Fguide%2Fenv-and-mode.html&project-name=exam-front-end&repository-name=fed1-exam-vanilla-frontend-website&skippable-integrations=1)
+[![Deploy with Netlify](https://js-ecommerce1.netlify.app/)
 
 ## Report
 
-(insert the report here)
+- [Report](https://docs.google.com/document/d/1awQhRRXK3Tnssdg0MqgXcDs4u9IQ128T6EjbsvtShWE/edit?usp=sharing)
 
 ## Minimum acceptence criteria
 
