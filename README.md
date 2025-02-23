@@ -14,7 +14,7 @@
 
 Your deployment is done via static hosting provider (Neflify is recommended).
 
-[![Deploy with Netlify](https://js-ecommerce1.netlify.app/)
+[Deploy with Netlify](https://js-ecommerce1.netlify.app/)
 
 ## Report
 
