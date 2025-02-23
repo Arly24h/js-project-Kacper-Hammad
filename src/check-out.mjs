@@ -63,7 +63,6 @@ checkoutFormEl.addEventListener("submit", async (event) => {
       expiry: expiry,
       cvv: cvv,
     });
-    console.log(response);
   } catch (error) {
     console.error(error?.message);
   }
@@ -72,7 +71,6 @@ checkoutFormEl.addEventListener("submit", async (event) => {
 });
 
 async function sendToApi(details) {
-  console.log("Form Details", details);
   alert(JSON.stringify(details));
   return "Success";
 }

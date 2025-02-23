@@ -102,7 +102,6 @@ function handleFormSubmit(event) {
   const formData = new FormData(event.target);
 
   addToCart({
-    // id: getIdFromUrl(),
     id: formData.get("id"),
     imgUrl: formData.get("imgUrl"),
     title: formData.get("title"),

@@ -20,9 +20,7 @@ function setup() {
     !cartCounterEl ||
     !cartItemsEl
   ) {
-    // alert("Js cannot run !!!");
     console.error("Elements are not avalible");
-    // return;
   } else {
     cartToggleBtnEl.addEventListener("click", toggleCartDisplay);
     cartCloseBtnEl.addEventListener("click", toggleCartDisplay);
