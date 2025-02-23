@@ -1,5 +1,6 @@
 import { api_Url, error_message_default, currency } from "./constants.mjs";
 import { createHTML, clearNode } from "./utils.mjs";
+// import { addToCart} from "./cart.mjs";
 const containerEl = document.querySelector("#js-product-details");
 
 setup();
@@ -57,7 +58,11 @@ function detailsTemplates({
                 <h2>${title}</h2>
                 <p class="price">${price} ${currency}</p>
                 <p class="description">${description}</p>
-                <form class="purchase-options">
+                <form class="purchase-options" name = "addToCartForm">
+                  <input name="id" value="${id}" hidden/>
+                  <input name="imgUrl" value="${primaryImgUrl}" hidden/>
+                  <input name="price" value="${price}" hidden/>
+                  <input name="title" value="${title}" hidden/>
                   <label for="size">Size:</label>
                   <select id="size" name="size">
                     <option value="s">Small</option>
@@ -84,4 +89,17 @@ function detailsTemplates({
   
   
   `;
+}
+function handleFormSubmit(event) {
+  event.preventDefault();
+  const formData = new FormData(event.target);
+
+  addToCart({
+    // id: getIdFromUrl(),
+    id: formData.get("id"),
+    imgUrl: formData.get("imgUrl"),
+    title: formData.get("title"),
+    price: formData.get("price"),
+    quantity: Number(formData.get("quantity")),
+  });
 }

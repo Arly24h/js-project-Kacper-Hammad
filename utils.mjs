@@ -7,3 +7,10 @@ export function createHTML(template) {
 export function clearNode(el) {
   el.innerHTML = "";
 }
+
+export function setStorageToLocal(key = "", value) {
+  window.localStorage.setItem(key, JSON.stringify(value));
+}
+export function getStorageToLocal(key = "") {
+  return JSON.parse(window.localStorage.getItem(key));
+}
