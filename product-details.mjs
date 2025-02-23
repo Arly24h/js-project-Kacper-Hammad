@@ -15,7 +15,7 @@ function setup() {
     fetchProductDetails(id);
   }
 }
-async function fetchProductDetails(productId) {
+async function fetchProductDetails(productId = "") {
   if (!productId) {
     throw new Error("Product ID was not supplied");
   }
@@ -31,6 +31,12 @@ async function fetchProductDetails(productId) {
       description,
     });
     const detailsEl = createHTML(template);
+
+    const formEl = detailsEl.querySelector("form");
+    formEl.addEventListener("submit", (event) => {
+      handleFormSubmit(event);
+    });
+
     clearNode(containerEl);
     containerEl.append(detailsEl);
   } catch (error) {
@@ -43,6 +49,7 @@ function detailsTemplates({
   price = 0,
   description = "This product does not have a discription",
   alt = "No description present",
+  id = "",
 }) {
   return `
 

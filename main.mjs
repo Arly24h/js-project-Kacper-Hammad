@@ -52,7 +52,9 @@ function productTemplate({
   description,
   index,
 }) {
-  const detailsUrl = `product-details.html?id=${id}`;
+  const paramsString = `id=${id}&title=${title}&imgUrl=${imgUrl}`;
+  const searchParams = new URLSearchParams(paramsString);
+  const detailsUrl = `/product-details.html?${searchParams.toString()}`;
   return `
   <article class="product-details animate__animated animate__fadeInUp animate__delay-${index}s">
       <div class="product-image">
@@ -63,7 +65,7 @@ function productTemplate({
 
       <div class="product-info">
         <h1 class="product-title">
-        <a href = ${detailsUrl}>  ${title} </a></h1>
+        <a href = ${detailsUrl}>${title} </a></h1>
         <div class="product-rating">
           <span>&#9733;</span>
           <span>&#9733;</span>
