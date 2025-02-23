@@ -15,16 +15,19 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
     <script
       src="https://kit.fontawesome.com/3cc0008f2c.js"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="/main.mjs" defer></script>
+    <script type="module" src="/cart.mjs" defer></script>
 
     <title>Rainy-Day | Contact Us</title>
   </head>
   <body>
     <header class="l-header">
-      <section class="c-nav-bar">
+      <div class="c-nav-bar">
         <div>
           <img
             src="./media/images/RainyDays_Logo.png"
@@ -33,7 +36,9 @@
             aria-describedby="Logo of the company"
           />
         </div>
+
         <!-- Hamburger manu -->
+
         <input type="checkbox" id="manu-checkbox" class="manu-checkbox" />
         <label for="manu-checkbox" class="hamburger-icon"
           ><span class="fas fa-bars hamburger"></span>
@@ -42,15 +47,14 @@
         <nav class="c-nav-bar-list">
           <a href="./index.html">Home</a>
           <a href="./about.html">About</a>
-          <a href="./contact.html">Contact Us</a>
+          <a href="./contact.html" class="active">Contact Us</a>
         </nav>
         <div class="c-nav-icons">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <i class="fa-solid fa-user"></i>
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
+          <button id="js-cart-toggle" class="c-cart-btnn">
+            Cart <span id="js-cart-count" class="c-cart-counter">0</span>
+          </button>
         </div>
-      </section>
+      </div>
     </header>
     <main class="l-main">
       <section class="c-section-contact">
@@ -234,5 +238,18 @@
         </section>
       </article>
     </footer>
+    <aside class="c-cart" id="js-cart">
+      <div class="c-cart-header">
+        <h2>Shopping Cart</h2>
+        <button class="c-close-cart" id="js-close-cart">&times;</button>
+      </div>
+      <div class="c-cart-items" id="js-cart-items"></div>
+      <div class="c-cart-footer">
+        <p>Total: <span id="js-cart-total">0</span></p>
+
+        <a href="./check-out.html" class="c-add-to-cart c-btn">Checkout </a>
+        <button class="btn" id="js-clear-cart">Clear Cart</button>
+      </div>
+    </aside>
   </body>
 </html>
