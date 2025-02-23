@@ -50,18 +50,18 @@ function productTemplate({
   description,
   index,
 }) {
+  const detailsUrl = `product-details.html?id=${id}`;
   return `
   <article class="product-details animate__animated animate__fadeInUp animate__delay-${index}s">
       <div class="product-image">
-        
+        <a href =${detailsUrl}>
         <img src="${imgUrl}" alt="${imgAl}" />
-       
-     
+        </a>
       </div
 
       <div class="c-product-preview-info">
         <h1 class="c-product-preview-title">
-          ${title}
+         <a href = ${detailsUrl}> ${title}</a>
         </h1>
 
 
