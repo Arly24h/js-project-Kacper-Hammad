@@ -1,12 +1,12 @@
-import { setItemsToStorage } from "./src/cart.mjs";
-import { getStorageToLocal } from "./src/utils.mjs";
+import { setLocalStorage } from "../cart.mjs";
+import { getStorageToLocal } from "../utils.mjs";
 const nameEl = document.querySelector("#js-name");
 const addressEl = document.querySelector("#js-address");
 
 document.body.addEventListener("click", (event) => {
   const target = event.target;
   if (target.href.includes("http")) {
-    setItemsToStorage([]);
+    setLocalStorage([]);
   }
 });
 const shippingInfo = getStorageToLocal("ShippingInfo");

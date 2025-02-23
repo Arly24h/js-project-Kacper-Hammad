@@ -1,6 +1,6 @@
 import { api_Url, error_message_default, currency } from "./constants.mjs";
 import { createHTML, clearNode } from "./utils.mjs";
-// import { addToCart} from "./cart.mjs";
+import { addToCart } from "./cart.mjs";
 const containerEl = document.querySelector("#js-product-details");
 
 setup();
