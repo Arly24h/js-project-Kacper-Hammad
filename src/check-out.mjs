@@ -1,5 +1,5 @@
 import { currency } from "../constants.mjs";
-import { getLocalStorage } from "../cart.mjs";
+import { getLocalStorage, calcTotal } from "../cart.mjs";
 import { createHTML, clearNode, setStorageToLocal } from "../utils.mjs";
 
 const oderSummaryEl = document.querySelector("#js-order-summary");
