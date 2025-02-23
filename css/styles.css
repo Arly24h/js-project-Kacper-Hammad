@@ -1178,6 +1178,10 @@ div a {
   margin-bottom: 10px;
 }
 
+& a {
+  text-decoration: none;
+}
+
 .product-rating {
   margin-bottom: 10px;
   font-size: 18px;
